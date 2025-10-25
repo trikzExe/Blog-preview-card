@@ -1,0 +1,103 @@
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+}
+
+body {
+  background-color: var(--Yellow);
+}
+
+section {
+  margin: 200px auto;
+  width: 22.5rem;
+  height: 31rem;
+  padding: 1.5rem;
+  background-color: var(--White);
+  border-radius: 20px;
+  border: solid 1px var(--Gray-950);
+  box-shadow: 8px 8px 0 var(--Gray-950);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+#hero-img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+#text-container {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+}
+
+#text-container * {
+  margin: 0;
+}
+
+#category {
+  font-size: 0.875rem;
+  line-height: 150%;
+  font-weight: 800;
+  background-color: var(--Yellow);
+  padding: 0.25rem 0.75rem;
+  width: min-content;
+  border-radius: 4px;
+  color: var(--Gray-950);
+}
+
+#date {
+  font-size: 0.875rem;
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--Gray-950);
+}
+
+#title {
+  font-family: "Figtree", sans-serif;
+  font-size: 1.5rem;
+  line-height: 150%;
+  font-weight: 800;
+  color: var(--Gray-950);
+  transition: 0.2s ease-out;
+}
+
+#title:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
+#description {
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--Gray-500);
+}
+
+p {
+  font-family: "Figtree", sans-serif;
+  margin: 0;
+}
+
+#author-container {
+  display: flex;
+  flex-flow: row;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+#username {
+    font-size: 0.875rem;
+  line-height: 150%;
+  font-weight: 800;
+  color: var(--Gray-950);
+}
+
+#user-img {
+    width: 32px;
+    height: 32px;
+}
